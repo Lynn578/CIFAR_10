@@ -19,7 +19,7 @@ async def read_root():
 
 
 # Load the model
-model = load_model('cifar_model.keras')
+model = load_model('cifar10_model.keras')
 
 @app.post("/predict/")
 async def predict(file: UploadFile = File(...)):
